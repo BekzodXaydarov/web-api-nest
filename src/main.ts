@@ -20,7 +20,7 @@ async function start() {
     app.useGlobalPipes(new ValidationPipe());
 
     app.enableCors({
-      origin: 'https://web-api-bekzod.netlify.app/', // Frontend URL
+      origin: true, // Frontend URL
       methods: 'GET,POST,PUT,DELETE',
       credentials: true, // Cookie'larni jo'natish uchun kerak bo'lsa
       allowedHeaders: 'Content-Type,Authorization',
